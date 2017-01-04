@@ -19,6 +19,7 @@
 		DEB4B0BE1E1D3F200002B9AF /* SampleFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = DEB4B0AE1E1D3F1F0002B9AF /* SampleFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DEB4B0C11E1D3F200002B9AF /* SampleFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEB4B0AC1E1D3F1F0002B9AF /* SampleFramework.framework */; };
 		DEB4B0C21E1D3F200002B9AF /* SampleFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DEB4B0AC1E1D3F1F0002B9AF /* SampleFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		DEB4B0CB1E1D3FDC0002B9AF /* AInSample.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEB4B0CA1E1D3FDC0002B9AF /* AInSample.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -93,6 +94,7 @@
 		DEB4B0B41E1D3F200002B9AF /* SampleFrameworkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SampleFrameworkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DEB4B0BB1E1D3F200002B9AF /* SampleFrameworkTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleFrameworkTests.swift; sourceTree = "<group>"; };
 		DEB4B0BD1E1D3F200002B9AF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DEB4B0CA1E1D3FDC0002B9AF /* AInSample.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AInSample.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,6 +141,7 @@
 		DEB4B06D1E1D3ED80002B9AF = {
 			isa = PBXGroup;
 			children = (
+				DEB4B0CA1E1D3FDC0002B9AF /* AInSample.swift */,
 				DEB4B0781E1D3ED80002B9AF /* SwiftAccessControlSample */,
 				DEB4B08D1E1D3ED90002B9AF /* SwiftAccessControlSampleTests */,
 				DEB4B0981E1D3ED90002B9AF /* SwiftAccessControlSampleUITests */,
@@ -341,6 +344,7 @@
 					};
 					DEB4B0AB1E1D3F1F0002B9AF = {
 						CreatedOnToolsVersion = 8.0;
+						LastSwiftMigration = 0800;
 						ProvisioningStyle = Automatic;
 					};
 					DEB4B0B31E1D3F200002B9AF = {
@@ -443,6 +447,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DEB4B0CB1E1D3FDC0002B9AF /* AInSample.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -598,6 +603,7 @@
 		DEB4B09F1E1D3ED90002B9AF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = SwiftAccessControlSample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -610,6 +616,7 @@
 		DEB4B0A01E1D3ED90002B9AF /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = SwiftAccessControlSample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -676,6 +683,7 @@
 		DEB4B0C41E1D3F200002B9AF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -688,6 +696,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.zhjxml.SampleFramework;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
@@ -698,6 +707,7 @@
 		DEB4B0C51E1D3F200002B9AF /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
