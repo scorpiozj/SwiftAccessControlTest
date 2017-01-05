@@ -20,6 +20,8 @@
 		DEB4B0C11E1D3F200002B9AF /* SampleFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEB4B0AC1E1D3F1F0002B9AF /* SampleFramework.framework */; };
 		DEB4B0C21E1D3F200002B9AF /* SampleFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DEB4B0AC1E1D3F1F0002B9AF /* SampleFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		DEB4B0CB1E1D3FDC0002B9AF /* AInSample.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEB4B0CA1E1D3FDC0002B9AF /* AInSample.swift */; };
+		DEB4B0CD1E1D40580002B9AF /* AccessVerify.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEB4B0CC1E1D40580002B9AF /* AccessVerify.swift */; };
+		DEB4B0CF1E1DE6D10002B9AF /* BInSample.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEB4B0CE1E1DE6D10002B9AF /* BInSample.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -95,6 +97,8 @@
 		DEB4B0BB1E1D3F200002B9AF /* SampleFrameworkTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleFrameworkTests.swift; sourceTree = "<group>"; };
 		DEB4B0BD1E1D3F200002B9AF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DEB4B0CA1E1D3FDC0002B9AF /* AInSample.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AInSample.swift; sourceTree = "<group>"; };
+		DEB4B0CC1E1D40580002B9AF /* AccessVerify.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccessVerify.swift; sourceTree = "<group>"; };
+		DEB4B0CE1E1DE6D10002B9AF /* BInSample.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BInSample.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -142,6 +146,7 @@
 			isa = PBXGroup;
 			children = (
 				DEB4B0CA1E1D3FDC0002B9AF /* AInSample.swift */,
+				DEB4B0CE1E1DE6D10002B9AF /* BInSample.swift */,
 				DEB4B0781E1D3ED80002B9AF /* SwiftAccessControlSample */,
 				DEB4B08D1E1D3ED90002B9AF /* SwiftAccessControlSampleTests */,
 				DEB4B0981E1D3ED90002B9AF /* SwiftAccessControlSampleUITests */,
@@ -172,6 +177,7 @@
 				DEB4B0801E1D3ED90002B9AF /* Assets.xcassets */,
 				DEB4B0821E1D3ED90002B9AF /* LaunchScreen.storyboard */,
 				DEB4B0851E1D3ED90002B9AF /* Info.plist */,
+				DEB4B0CC1E1D40580002B9AF /* AccessVerify.swift */,
 			);
 			path = SwiftAccessControlSample;
 			sourceTree = "<group>";
@@ -422,6 +428,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DEB4B0CD1E1D40580002B9AF /* AccessVerify.swift in Sources */,
 				DEB4B07C1E1D3ED80002B9AF /* ViewController.swift in Sources */,
 				DEB4B07A1E1D3ED80002B9AF /* AppDelegate.swift in Sources */,
 			);
@@ -448,6 +455,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DEB4B0CB1E1D3FDC0002B9AF /* AInSample.swift in Sources */,
+				DEB4B0CF1E1DE6D10002B9AF /* BInSample.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
