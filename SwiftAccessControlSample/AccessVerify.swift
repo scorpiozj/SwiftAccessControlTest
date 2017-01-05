@@ -23,9 +23,20 @@ class VerifyABClass {
     ///B()默认internal，只能在所属module内使用
     //    let bInstance = B()
     
-    
-    
 }
 
+class AChild : A {
+    override func description() -> String {
+        return "AChild description"
+    }
+    ///不能在module外重载非open
+//    override func description2()-> Void {
+//        
+//    }
+}
 
+///B是public，只能在所属module内subclass
+//class BChild : B {
+//    
+//}
 		

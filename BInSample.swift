@@ -44,3 +44,19 @@ class TestAClass2 {
         //\(aInstance.moduleName)
     }
 }
+
+class AChildModule: A {
+    override func description2() {
+        
+    }
+}
+
+///fileprivate,private的class，子类也要标明相应的control
+
+///此种情况下，private相当于fileprivate
+private class C {
+    
+}
+private class CChild: C {
+    
+}

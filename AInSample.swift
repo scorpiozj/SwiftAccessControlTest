@@ -32,6 +32,11 @@ open class A {
     open func description()->String {
         return "A description"
     }
+    
+    public func description2()->Void {
+        
+    }
+    
 
 }
 
