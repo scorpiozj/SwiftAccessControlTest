@@ -8,6 +8,39 @@
 
 import Foundation
 
-class TestAClass2 {
+public class B {
+    open var age: Int?
     
+    public var name: String?
+    
+    public func printName() {
+        print("name is \(name)")
+    }
+    
+    fileprivate var moduleName: String?
+    
+    private var internalName: String?
+    
+    //默认internal，只能在所属module中使用
+    init() {
+        age = 0
+        name = "B"
+        moduleName = "SampleFramework"
+        internalName = "InternalName: B"
+    }
+    
+    open func description()->String {
+        return "B description"
+    }
+}
+
+
+class TestAClass2 {
+    let aInstance = A()
+    
+    func TestControl() -> Void {
+        print("\(aInstance.age), \(aInstance.name)")
+        ///fileprivate不能访问
+        //\(aInstance.moduleName)
+    }
 }
